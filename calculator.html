@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Air Compressor CFM Sizing &amp; Energy Calculator | Umiya Corporation</title>
+  <meta name="description" content="Calculate required compressor CFM, HP, working pressure, dryer capacity, and annual electrical power savings with Umiya Corporation's online engineering tool.">
+  <link rel="canonical" href="https://www.umiyacorporation.com/calculator.html">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-pulse"><span class="pulse-dot"></span> 24/7 Emergency Breakdown Dispatch</span>
+        <div class="top-info-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span class="hide-mobile">38, Diamond Complex, Highway Road, Unjha - 384170 (N. Gujarat)</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-info-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <a href="mailto:umiyacorp@gmail.com">umiyacorp@gmail.com</a>
+        </div>
+        <div class="top-info-item text-gold" style="font-weight: 700;">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+919426878342">+91 94268 78342</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="main-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap" title="Umiya Corporation Homepage">
+        <img src="assets/logo.png" alt="Umiya Corporation Logo" class="brand-logo-img" width="52" height="52">
+        <div class="brand-text-block">
+          <span class="brand-title">UMIYA <span>CORPORATION</span></span>
+          <span class="brand-tagline">Sales &bull; Spares &bull; 24/7 Service</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products &amp; Specs</a></li>
+          <li><a href="clients.html" class="nav-link highlight">Client Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="calculator.html" class="nav-link active">CFM Calculator</a></li>
+          <li><a href="spares.html" class="nav-link">Spares</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="contact.html" class="btn btn-gold btn-sm hide-mobile">Request Quote</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo-wrap">
+        <img src="assets/logo.png" alt="Umiya Corporation" width="45" height="45">
+        <span class="brand-title" style="font-size: 1.1rem;">UMIYA <span>CORP</span></span>
+      </div>
+      <button id="mobileMenuClose" style="background: none; color: #fff; font-size: 1.5rem;">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products &amp; Machinery</a></li>
+      <li><a href="clients.html" class="mobile-nav-link text-gold">Client Portfolio &amp; Installations</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Engineering Services &amp; AMC</a></li>
+      <li><a href="calculator.html" class="mobile-nav-link text-gold">CFM Sizing Calculator</a></li>
+      <li><a href="spares.html" class="mobile-nav-link">Genuine Spares</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact &amp; Inquiries</a></li>
+    </ul>
+  </div>
+
+  <!-- INNER PAGE BANNER -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> &rsaquo; <span>CFM Calculator</span>
+      </div>
+      <h1 class="page-banner-title">Compressed Air Sizing &amp; CFM Calculator</h1>
+      <p class="page-banner-desc">
+        Calculate your plant's required air volume, working pressure, compressor horsepower, matching refrigerated air dryer rating, and estimated annual energy savings.
+      </p>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <section class="section-padding" style="background: var(--navy-950);">
+    <div class="container">
+      <div class="calculator-card">
+        <form id="compressorCalcForm" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label class="form-label" for="calcIndustry">Target Industrial Application <span>*</span></label>
+            <select class="form-control" id="calcIndustry">
+              <option value="general" selected>General Fabrication &amp; Engineering Workshops</option>
+              <option value="plasma">CNC Plasma / Laser Cutting (Requires 16 Bar Package)</option>
+              <option value="ceramics">Ceramics, Tiles &amp; Sanitaryware Glazing</option>
+              <option value="textile">Textile Looms, Air-Jet Weaving &amp; Spinning</option>
+              <option value="pet">PET Bottle Blow Molding (Requires 35 Bar / 500 PSIG)</option>
+              <option value="pharma">Pharmaceuticals &amp; Food Processing (Oil-Free Class 0)</option>
+              <option value="dental">Dental &amp; Medical Clinics (1HP Clean Air)</option>
+            </select>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="calcPressure">Required Working Pressure <span>*</span></label>
+              <select class="form-control" id="calcPressure">
+                <option value="8" selected>8 Bar (116 PSI) - Standard Industrial</option>
+                <option value="10">10 Bar (145 PSI) - Medium Duty</option>
+                <option value="12.3">12.3 Bar (175 PSI) - Two Stage Piston</option>
+                <option value="16">16 Bar (232 PSI) - CNC Plasma Cutting</option>
+                <option value="35">35 Bar (500 PSI) - PET Blow Molding</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calcCfm">Total Required Air Flow (CFM) <span>*</span></label>
+              <input type="number" class="form-control" id="calcCfm" value="120" min="5" max="3000" placeholder="e.g. 120 CFM">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcTools">Connected Pneumatic Workstations / Tools</label>
+            <input type="number" class="form-control" id="calcTools" value="6" min="1" max="100" placeholder="Number of tools">
+          </div>
+
+          <p style="font-size: 0.8rem; color: var(--steel-400);">
+            * Calculator automatically includes a 20% engineering safety and line-loss margin.
+          </p>
+        </form>
+
+        <!-- Dynamic Output Box -->
+        <div class="calculator-result-box">
+          <div class="calc-rec-title">Recommended System Setup</div>
+          <div class="calc-model-name" id="calcOutModel">UMA-9-30</div>
+          
+          <div class="calc-rec-specs">
+            <div class="calc-spec-item">
+              <div class="label">Compressor Power</div>
+              <div class="val" id="calcOutHp">30 HP / 22 KW</div>
+            </div>
+            <div class="calc-spec-item">
+              <div class="label">Working Pressure</div>
+              <div class="val" id="calcOutPressure">8 Bar</div>
+            </div>
+            <div class="calc-spec-item">
+              <div class="label">Matching Air Dryer</div>
+              <div class="val" id="calcOutDryer">UMA-9-150 (150 CFM)</div>
+            </div>
+            <div class="calc-spec-item">
+              <div class="label">Receiver Tank</div>
+              <div class="val" id="calcOutTank">1000 Liters</div>
+            </div>
+          </div>
+
+          <a href="#" id="calcWhatsappBtn" target="_blank" class="btn btn-whatsapp btn-sm">
+            Inquire About This Setup on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Energy Savings Estimator -->
+      <div style="margin-top: 3.5rem; background: rgba(20, 32, 80, 0.4); border: 1px solid rgba(245, 184, 0, 0.2); border-radius: var(--radius-lg); padding: 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <h4 style="font-family: var(--font-heading); color: #fff; font-size: 1.25rem; margin-bottom: 0.3rem;">
+              💰 PM VFD Energy Savings Calculator
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--steel-300); max-width: 600px;">
+              See how replacing an old piston or fixed-speed compressor with an Umiya Permanent Magnet VFD Screw Compressor cuts electricity consumption by up to 30%.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+            <div>
+              <label style="font-size: 0.75rem; color: var(--steel-400); display: block;">Motor HP</label>
+              <input type="number" id="energyHp" value="30" min="5" max="100" style="width: 80px; padding: 0.4rem; background: #060a19; border: 1px solid #334155; color: #fff; border-radius: 4px;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--steel-400); display: block;">Operating Hrs/Day</label>
+              <input type="number" id="energyHours" value="16" min="1" max="24" style="width: 80px; padding: 0.4rem; background: #060a19; border: 1px solid #334155; color: #fff; border-radius: 4px;">
+            </div>
+            <div>
+              <label style="font-size: 0.75rem; color: var(--steel-400); display: block;">Tariff (₹/kWh)</label>
+              <input type="number" id="energyTariff" value="8.5" step="0.5" min="4" max="15" style="width: 80px; padding: 0.4rem; background: #060a19; border: 1px solid #334155; color: #fff; border-radius: 4px;">
+            </div>
+          </div>
+
+          <div style="text-align: right;">
+            <div style="font-size: 0.8rem; color: var(--steel-400);">Estimated Annual Savings</div>
+            <div id="savingsInr" style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: #34d399;">₹ 2,74,214 / Year</div>
+            <div id="savingsKwh" style="font-size: 0.8rem; color: var(--gold-400);">32,261 kWh Saved</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo-wrap" style="margin-bottom: 1.2rem;">
+          <img src="assets/logo.png" alt="Umiya Corporation" width="55" height="55">
+          <div class="brand-text-block">
+            <span class="brand-title">UMIYA <span>CORP</span></span>
+            <span class="brand-tagline">Sales &amp; Service Excellence</span>
+          </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--gold-400);">📍 38, Diamond Complex, Highway Road, Unjha - 384170</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products &amp; Technical Specs</a></li>
+          <li><a href="clients.html">Client Portfolio &amp; Installations</a></li>
+          <li><a href="services.html">Engineering Services &amp; AMC</a></li>
+          <li><a href="calculator.html">CFM Sizing Calculator</a></li>
+          <li><a href="spares.html">Genuine Spare Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p><strong>Phone:</strong> <a href="tel:+919426878342" style="color: var(--gold-400);">+91 94268 78342</a></p>
+        <p><strong>Email:</strong> <a href="mailto:umiyacorp@gmail.com">umiyacorp@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Umiya Corporation. All Rights Reserved.</div>
+      <div>Interactive Engineering Tools</div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions">
+    <a href="https://web.whatsapp.com/send?phone=919426878342&text=Hello%20Umiya%20Corporation,%20I%20have%20an%20inquiry" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.92z"/></svg>
+      <span class="float-tooltip">Chat with Engineer</span>
+    </a>
+    <a href="tel:+919426878342" class="float-btn float-call" aria-label="Call Umiya Corporation">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="float-tooltip">Call: +91 94268 78342</span>
+    </a>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Our Client Portfolio &amp; Industrial Installations | Umiya Corporation Gujarat</title>
+  <meta name="description" content="View Umiya Corporation's extensive industrial client list across Gujarat. Products sold, compressors installed, and ongoing AMC engineering services delivered in Ceramics, Textiles, Pharma, Plastics &amp; Steel.">
+  <link rel="canonical" href="https://www.umiyacorporation.com/clients.html">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-pulse"><span class="pulse-dot"></span> 24/7 Emergency Breakdown Dispatch</span>
+        <div class="top-info-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span class="hide-mobile">38, Diamond Complex, Highway Road, Unjha - 384170 (N. Gujarat)</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-info-item">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <a href="mailto:umiyacorp@gmail.com">umiyacorp@gmail.com</a>
+        </div>
+        <div class="top-info-item text-gold" style="font-weight: 700;">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+919426878342">+91 94268 78342</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="main-header" id="mainHeader">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo-wrap" title="Umiya Corporation Homepage">
+        <img src="assets/logo.png" alt="Umiya Corporation Logo" class="brand-logo-img" width="52" height="52">
+        <div class="brand-text-block">
+          <span class="brand-title">UMIYA <span>CORPORATION</span></span>
+          <span class="brand-tagline">Sales &bull; Spares &bull; 24/7 Service</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products &amp; Specs</a></li>
+          <li><a href="clients.html" class="nav-link active highlight">Client Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="calculator.html" class="nav-link">CFM Calculator</a></li>
+          <li><a href="spares.html" class="nav-link">Spares</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="contact.html" class="btn btn-gold btn-sm hide-mobile">Request Quote</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo-wrap">
+        <img src="assets/logo.png" alt="Umiya Corporation" width="45" height="45">
+        <span class="brand-title" style="font-size: 1.1rem;">UMIYA <span>CORP</span></span>
+      </div>
+      <button id="mobileMenuClose" style="background: none; color: #fff; font-size: 1.5rem;">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="products.html" class="mobile-nav-link">Products &amp; Machinery</a></li>
+      <li><a href="clients.html" class="mobile-nav-link text-gold">Client Portfolio &amp; Installations</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Engineering Services &amp; AMC</a></li>
+      <li><a href="calculator.html" class="mobile-nav-link">CFM Sizing Calculator</a></li>
+      <li><a href="spares.html" class="mobile-nav-link">Genuine Spares</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact &amp; Inquiries</a></li>
+    </ul>
+  </div>
+
+  <!-- INNER PAGE BANNER -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a> &rsaquo; <span>Client Portfolio</span>
+      </div>
+      <h1 class="page-banner-title">Our Valued Clients &amp; Industrial Installations</h1>
+      <p class="page-banner-desc">
+        A comprehensive record of products sold, compressor packages installed, and ongoing engineering maintenance services delivered across manufacturing sectors in Gujarat and Pan-India.
+      </p>
+    </div>
+  </section>
+
+  <!-- CLIENT PORTFOLIO SECTION -->
+  <section class="section-padding" style="background: var(--navy-950);">
+    <div class="container">
+      <!-- Industry Filter Bar -->
+      <div class="client-filter-bar">
+        <button class="client-filter-btn active" data-filter="all">All Industries (12)</button>
+        <button class="client-filter-btn" data-filter="ceramics">Ceramics &amp; Tiles</button>
+        <button class="client-filter-btn" data-filter="textile">Textile &amp; Spinning</button>
+        <button class="client-filter-btn" data-filter="pharma">Pharma &amp; Healthcare</button>
+        <button class="client-filter-btn" data-filter="plastics">Plastics &amp; PET</button>
+        <button class="client-filter-btn" data-filter="plasma">CNC Plasma &amp; Heavy Engg</button>
+        <button class="client-filter-btn" data-filter="spices">Spices &amp; Food Agri</button>
+        <button class="client-filter-btn" data-filter="steel">Steel &amp; Foundries</button>
+      </div>
+
+      <!-- Clients Grid -->
+      <div class="clients-grid" id="clientsGrid">
+
+        <!-- Client 1 -->
+        <article class="client-card" data-category="ceramics">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Ceramics &amp; Vitrified Tiles</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Shiv Vitrified Tiles Pvt. Ltd.</h3>
+          <div class="client-location">📍 Morbi Ceramic Zone, Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-75 (75 HP / 55 KW) Rotary Screw Compressor + UMA-9-400 (400 CFM) Refrigerated Air Dryer + 2000L Receiver Vessel.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Full turnkey pneumatic line commissioning, comprehensive Annual Maintenance Contract (AMC), synthetic screw lubricant replenishment, and bi-monthly air-filter replacement.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">⚡ 99.8% continuous kiln uptime</span>
+            <span class="client-year">Since 2019</span>
+          </div>
+        </article>
+
+        <!-- Client 2 -->
+        <article class="client-card" data-category="textile">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Textile &amp; Air-Jet Weaving</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Gayatri Synthetics &amp; Weaving Mills</h3>
+          <div class="client-location">📍 Pandesara GIDC, Surat, Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              2x UMA-9-50 (50 HP) PM-VFD Rotary Screw Compressors + Dual 250 CFM Refrigerated Air Dryers + Micro-Coalescing Filters.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              VFD parameter tuning for load-matching air consumption, air leak ultrasonic audit, oil-separator overhauling, and 24/7 priority breakdown hotline.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">⚡ 32% electrical power bill reduction</span>
+            <span class="client-year">Since 2021</span>
+          </div>
+        </article>
+
+        <!-- Client 3 -->
+        <article class="client-card" data-category="pharma">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Pharmaceuticals &amp; Cleanrooms</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">BioCare Remedies &amp; Formulations</h3>
+          <div class="client-location">📍 Changodar Industrial Estate, Ahmedabad</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-15T O (15 HP) 100% Oil-Free Clean Air Compressor + Heatless Desiccant Dryer (-40°C Dew Point) + 500L Stainless Steel Vessel.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              ISO 8573-1 Class 0 clean air compliance certification, quarterly desiccant replacement, HEPA filter validation, and preventive AMC.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🛡️ Zero oil contamination audit passed</span>
+            <span class="client-year">Since 2020</span>
+          </div>
+        </article>
+
+        <!-- Client 4 -->
+        <article class="client-card" data-category="plastics">
+          <div class="client-card-header">
+            <span class="client-industry-badge">PET Blow Molding &amp; Packaging</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">AquaPure Beverages &amp; Preforms</h3>
+          <div class="client-location">📍 Kadi Highway Industrial Corridor, Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-15T2 Multi-Stage High Pressure 500 PSIG (35 Bar) Air Compressor + 500L High-Pressure Air Receiver + 35 Bar Refrigerated Dryer.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              High-pressure valve plate reconditioning, piston ring replacement, safety relief valve calibration, and 2-hour rapid breakdown response.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🍾 Consistent 35 Bar blow-cycle accuracy</span>
+            <span class="client-year">Since 2018</span>
+          </div>
+        </article>
+
+        <!-- Client 5 -->
+        <article class="client-card" data-category="plasma">
+          <div class="client-card-header">
+            <span class="client-industry-badge">CNC Plasma &amp; Laser Cutting</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Maruti Precision Fabricators</h3>
+          <div class="client-location">📍 Highway Road, Unjha, North Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              16 Bar High-Pressure Rotary Screw Compressor Package (UMA-9-30, 30 HP) + 16 Bar High-Pressure Refrigerated Dryer + Micro Oil Filters.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Zero-moisture line integration to prevent torch nozzle burnout, quarterly filter kit changes, and air-oil separator replacements.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🎯 4x increase in plasma torch consumable life</span>
+            <span class="client-year">Since 2022</span>
+          </div>
+        </article>
+
+        <!-- Client 6 -->
+        <article class="client-card" data-category="spices">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Spices &amp; Agri-Food Processing</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Sardar Agri Seeds &amp; Spice Processing</h3>
+          <div class="client-location">📍 Ganj Bazaar / APMC Hub, Unjha</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-30 (30 HP) Screw Compressor + High-Efficiency Refrigerated Dryer + Food-Grade Synthetic Lubricant Setup for Cumin/Fennel Color Sorters.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Clean air sorting calibration for Bühler &amp; Sortex optical machines, auto-drain valve retrofits, and peak-season 24/7 on-call service.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🌿 100% moisture-free optical grain sorting</span>
+            <span class="client-year">Since 2017</span>
+          </div>
+        </article>
+
+        <!-- Client 7 -->
+        <article class="client-card" data-category="steel">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Steel Rolling &amp; Forging</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Ambica Alloy &amp; Steel Rolling Mills</h3>
+          <div class="client-location">📍 Sihor Industrial Area, Bhavnagar</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-100 (100 HP / 75 KW) Heavy Screw Compressor + 500 CFM Air Dryer + 3000L Tested Air Receiver.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Major 40,000-hour screw air-end element reconditioning, high-load SKF bearing replacement, dynamic balancing, and vibration analysis.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">⚙️ Restored to factory OEM efficiency</span>
+            <span class="client-year">Since 2016</span>
+          </div>
+        </article>
+
+        <!-- Client 8 -->
+        <article class="client-card" data-category="ceramics">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Sanitaryware &amp; Porcelain</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Royal Sanitaryware Industries</h3>
+          <div class="client-location">📍 Himatnagar Ceramic Hub, Sabarkantha</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-60 (60 HP) Screw Compressor + UMA-9-300 Refrigerated Dryer + Dual Stage Coalescing Filter Line.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Glaze spraying pressure stabilization, microprocessor PLC repair, quarterly oil filter renewals, and scheduled plant shutdown servicing.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">✨ Smooth glaze finish with zero oil streaks</span>
+            <span class="client-year">Since 2020</span>
+          </div>
+        </article>
+
+        <!-- Client 9 -->
+        <article class="client-card" data-category="plasma">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Heavy Engineering &amp; Foundry</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Patel Heavy Engineering &amp; Fabricators</h3>
+          <div class="client-location">📍 Mehsana GIDC Phase-2, Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-25T (25 HP, 500L Tank) Heavy-Duty Two-Stage Piston Compressor + UMA-9-40 (40 HP) Screw Compressor.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Cylinder head reboring, valve disc replacements, automatic dual unloader calibration, and annual mechanical inspection.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🔨 High shot-blasting &amp; pneumatic hammer torque</span>
+            <span class="client-year">Since 2015</span>
+          </div>
+        </article>
+
+        <!-- Client 10 -->
+        <article class="client-card" data-category="plastics">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Plastic Extrusion &amp; Molding</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Krishna Polyplast Industries</h3>
+          <div class="client-location">📍 Chhatral GIDC, North Gujarat</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-40 (40 HP) Screw Compressor + Industrial Water Chiller (10 TR) + 1000L Receiver Tank.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Dual cooling and pneumatic system integration, thermo-expansion valve maintenance, and preventive quarterly checkups.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">⚡ Constant mold cooling and ejector cycle speed</span>
+            <span class="client-year">Since 2021</span>
+          </div>
+        </article>
+
+        <!-- Client 11 -->
+        <article class="client-card" data-category="textile">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Yarn Spinning &amp; Ginning</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Vardhman Cotton Mills Pvt. Ltd.</h3>
+          <div class="client-location">📍 Narol Textile Cluster, Ahmedabad</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              UMA-9-75 (75 HP) Screw Compressor with Permanent Magnet VFD + Dual Stage Centrifugal Moisture Separators.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Ring-frame pneumatic splicing line air audit, lint-resistant pre-filter hood design, and complete AMC coverage.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">⚡ 28% reduced idle running power loss</span>
+            <span class="client-year">Since 2019</span>
+          </div>
+        </article>
+
+        <!-- Client 12 -->
+        <article class="client-card" data-category="pharma">
+          <div class="client-card-header">
+            <span class="client-industry-badge">Medical &amp; Dental Clinics</span>
+            <span class="client-verified-tag">✓ Active Client</span>
+          </div>
+          <h3 class="client-name">Apex Advanced Dental &amp; Surgical Hub</h3>
+          <div class="client-location">📍 Patan Highway Medical Complex</div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">📦 Product Sold &amp; Installed:</div>
+            <div class="client-block-value">
+              1HP Medical Grade Oil-Free Dental Compressor + Internal Anti-Bacterial Tank Coating + Silent Acoustic Damping.
+            </div>
+          </div>
+
+          <div class="client-detail-block">
+            <div class="client-block-label">🛠️ Services Provided:</div>
+            <div class="client-block-value">
+              Chair line piping, sterile air filtration maintenance, auto-drain servicing, and bi-annual sanitization checks.
+            </div>
+          </div>
+
+          <div class="client-result-tag">
+            <span class="client-result-text">🩺 100% sterile medical air compliance</span>
+            <span class="client-year">Since 2022</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="contact.html" class="btn btn-gold btn-lg">Request References in Your Sector / Inquire</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo-wrap" style="margin-bottom: 1.2rem;">
+          <img src="assets/logo.png" alt="Umiya Corporation" width="55" height="55">
+          <div class="brand-text-block">
+            <span class="brand-title">UMIYA <span>CORP</span></span>
+            <span class="brand-tagline">Sales &amp; Service Excellence</span>
+          </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--gold-400);">
+          📍 38, Diamond Complex, Highway Road, Unjha - 384170
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products &amp; Technical Specs</a></li>
+          <li><a href="clients.html">Client Portfolio &amp; Installations</a></li>
+          <li><a href="services.html">Engineering Services &amp; AMC</a></li>
+          <li><a href="calculator.html">CFM Sizing Calculator</a></li>
+          <li><a href="spares.html">Genuine Spare Parts</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact &amp; Inquiries</h4>
+        <p style="margin-bottom: 0.6rem;">
+          <strong>Phone:</strong> <a href="tel:+919426878342" style="color: var(--gold-400);">+91 94268 78342</a>
+        </p>
+        <p style="margin-bottom: 0.6rem;">
+          <strong>Email:</strong> <a href="mailto:umiyacorp@gmail.com">umiyacorp@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Umiya Corporation. All Rights Reserved. Sales &amp; Service.</div>
+      <div>Client Portfolio &amp; Installations</div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions">
+    <a href="https://web.whatsapp.com/send?phone=919426878342&text=Hello%20Umiya%20Corporation,%20I%20have%20an%20inquiry" target="_blank" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/></svg>
+      <span class="float-tooltip">Chat with Engineer</span>
+    </a>
+    <a href="tel:+919426878342" class="float-btn float-call" aria-label="Call Umiya Corporation">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="float-tooltip">Call: +91 94268 78342</span>
+    </a>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
